@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор плитки</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <div class="container">
+    <h2>🧱 Калькулятор плитки</h2>
+    <p class="subtitle">Посчитайте сколько плитки нужно для пола</p>
+
+    <div class="inputs">
+      <div class="input-box">
+        <label>Длина пола (м)</label>
+        <input type="number" id="floorLength" value="7">
+      </div>
+
+      <div class="input-box">
+        <label>Ширина пола (м)</label>
+        <input type="number" id="floorWidth" value="4">
+      </div>
+
+      <div class="input-box">
+        <label>Длина плитки (см)</label>
+        <input type="number" id="tileLength" value="30">
+      </div>
+
+      <div class="input-box">
+        <label>Ширина плитки (см)</label>
+        <input type="number" id="tileWidth" value="50">
+      </div>
+    </div>
+
+    <div class="checkbox-box">
+      <input type="checkbox" id="reserve" checked>
+      <label for="reserve">Добавить запас +10%</label>
+    </div>
+
+    <button onclick="calculateTiles()">Посчитать</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
